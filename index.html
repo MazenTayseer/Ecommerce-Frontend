@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <title>SneakPeak</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="navbar">
+      <a href="../index.html" class="logo"
+        ><img width="150" src="../assets/imgs/logo.png" alt="Logo"
+      /></a>
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../info/about.html">About</a></li>
+          <li><a href="../info/contact.html">Contact</a></li>
+          <li>
+            <a href="../shop/all.html">Shop <i class="fa fa-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="../shop/all.html">All Products</a></li>
+              <li><a href="../shop/sneakers.html">Sneakers</a></li>
+              <li class="more">
+                <a href="../shop/all.html"
+                  >More <i class="fa fa-angle-right"></i
+                ></a>
+                <ul class="sub-sub-menu">
+                  <li><a href="../shop/apparel.html">Apparel</a></li>
+                  <li><a href="../shop/electronics.html">Electronics</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <a href="../shop/cart.html" class="cart_btn"
+          ><button><i class="fa-solid fa-cart-shopping"></i></button
+        ></a>
+        <a href="../auth/logIn.html" class="shop_btn"
+          ><button>Log In</button></a
+        >
+        <button id="mode_button">
+          <i id="modeIcon" class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section>
+      <div class="hero_container">
+        <img src="./assets/imgs/main.png" alt="" />
+        <div class="hero_text">
+          <h1>Shop with SneakPeak</h1>
+          <p>
+            With SneakPeak, you can shop for a wide variety of different clothes
+            from you favourite brands all over the world.
+          </p>
+          <a href="#topPicks"><button class="hero_btn">Top Picks</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jumbotron -->
+    <section>
+      <div class="jumbotron_container">
+        <h2>Feel the Thrill, Fly with Style</h2>
+        <p>
+          Elevate your experience with our sneakers and soar above the streets.
+        </p>
+
+        <video id="indexVideo" height="550" controls autoplay muted>
+          <source src="./assets/vids/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section>
+      <div id="topPicks" class="products_container">
+        <h1 class="top_shop">Top Picks</h1>
+
+        <div class="index_shop_container">
+          <div class="index_top_picks_grid" id="productList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer_left">
+        <div>
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../info/about.html">About</a></li>
+            <li><a href="../info/contact.html">Contact</a></li>
+            <li><a href="../shop/all.html">Shop</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Company Info</h3>
+          <ul>
+            <li>Cairo, Egypt</li>
+            <li>&copy; 2023 SneakPeak.</li>
+            <li>All rights reserved</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Subscribe</h3>
+          <ul>
+            <li>
+              Subscribe to our mail list<br />
+              to keep updated
+            </li>
+            <li><button>Subscribe</button></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <title>SneakPeak - Sign Up</title>
+  </head>
+  <body>
+    <!-- Log in -->
+    <div class="auth_container" style="height: 100vh">
+      <form name="signUpForm">
+        <h1>Sign up</h1>
+
+        <div class="social_container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google"></i></a>
+          <a href="#" class="social"><i class="fab fa-github"></i></a>
+        </div>
+
+        <span>or sign up with a new account</span>
+
+        <fieldset>
+          <legend>Information</legend>
+          <input
+            type="text"
+            placeholder="First Name"
+            id="firstName"
+            name="firstName"
+            required
+          />
+          <p hidden class="first_name_validation_p">Enter First Name</p>
+          <input
+            type="text"
+            placeholder="Last Name"
+            id="lastName"
+            name="lastName"
+            required
+          />
+          <p hidden class="last_name_validation_p">Enter Last Name</p>
+
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <p hidden class="gender_validation_p">Select a gender</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Credentials</legend>
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            required
+          />
+          <p hidden class="email_validation_p">Enter a valid email</p>
+
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            name="password"
+            required
+          />
+          <p hidden class="password_validation_p">
+            Password must contain uppercase, lowercase characters and a number.
+          </p>
+
+          <input
+            type="password"
+            placeholder="Re-enter Password"
+            id="secondPassword"
+            name="secondPassword"
+            required
+          />
+          <p hidden class="second_password_validation_p">
+            Passwords Doesnt match
+          </p>
+        </fieldset>
+
+        <button id="signUp_btn">Sign Up</button>
+        <p>
+          Already a member?
+          <a href="../auth/logIn.html" class="other_auth_a">Log in Here</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
